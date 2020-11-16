@@ -70,7 +70,7 @@ jobs:
           run: |
             cd fibonaccicreator
             poetry install
-            poetry run python fibonaccicreator --number 10 --container list
+            poetry run python fibonaccicreator --number 10 --approach iterative --display
         # Run the pytest test suite
         - name: Run Pytest Test Suite
           if: always()
