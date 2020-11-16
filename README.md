@@ -215,46 +215,56 @@ Python program you need to be in the directory called `factorialmaker`.
 ### Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence
 
 For this laboratory assignment you are going to design, implement, and test a
-program that, for a specified "container" (which, for this assignment is either
-a tuple a list or, alternatively, a generator function which does not really use
-a container), computes and returns the [Fibonacci
-numbers](https://www.mathsisfun.com/numbers/fibonacci-sequence.html) up to a
-specified number. This assignment will required you to combine your knowledge of
-functions, iteration constructs, the tuple discrete structure, and mathematics
-to create an adaptable Python program that you implement in an industry-standard
+program that, for a specified "approach" (which, for this assignment is either
+an iterative, recursive, or memoized function), computes and returns the
+requested [Fibonacci
+number](https://www.mathsisfun.com/numbers/fibonacci-sequence.html). This
+assignment will required you to combine your knowledge of functions, iteration
+constructs, recursion, the dictionary discrete structure, and mathematics to
+create an adaptable Python program that you implement in an industry-standard
 fashion. For instance, when you run the completed version of the Python program
-with the command `poetry run python fibonaccicreator --number 10 --container
-generator` it will produce the following output:
+with the command `time poetry run python fibonaccicreator --number 1000
+--approach memoized` it will produce the following output:
 
 ```
-The chosen type of container is the generator! 🗃
+The chosen type of approach is memoized!
 
-The program will compute up to the 10000th Fibonacci number! 🔢
+The program will compute the 1000th Fibonacci number! 🔢
 
-So, was this an efficient container for storing the Fibonacci sequence? 🤷
+So, was this an efficient approach for computing the Fibonacci sequence? 🤷
 
 Estimated overall memory according to the operating system:
-   26.87109375 megabytes
+   19.55859375 megabytes
 
 Estimated peak memory according to the operating system:
-   34.015625 megabytes
+   33.87109375 megabytes
+
+Estimated size of the dictionary: 36960 bytes
+poetry run python fibonaccicreator --number 1000 --approach memoized  0.29s user 0.07s system 101% cpu 0.354 total
 ```
 
-Please note that this version of the program adds a `--display` function and
-thus it will no longer display the Fibonacci numbers unless this argument is
-passed to the function. This helps to ensure that your terminal window is not
-crowded with data values when running performance benchmarks.
+As in a previous assignment, please note that this version of the program adds a
+`--display` function and thus it will no longer display the Fibonacci numbers
+unless this argument is passed to the function. This helps to ensure that your
+terminal window is not crowded with data values when running performance
+benchmarks. With that said, it is important to point out that this laboratory
+assignment requires you to implement a recursive implementation of the Fibonacci
+sequence calculator. Please note that this implementation could provide to be
+extremely slow! As such, you need to ensure that you to not use the recursive
+implementation to calculate too large of a Fibonacci function as it could take
+a long period of time, depending on the speed of your laptop.
 
-One noteworthy aspect of this program is that it uses the `getattr` function to
-"construct" an executable version of a Python function when provided with the
-name of the function, as described in this [StackOverflow
+As in previous assignments, one noteworthy aspect of this program is that it
+uses the `getattr` function to "construct" an executable version of a Python
+function when provided with the name of the function, as described in this
+[StackOverflow
 reference](https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string).
-After reading the discussion on StackOverflow, make sure that you understand the
-source code line `function_to_call = getattr(fibonacci, function)`. You should
-also notice that, instead of accepting as input the full name of a function,
-this program accepts the name of the container and then builds up the name of
-the function. Can you find and understand the source code that completes this
-task?
+After reading the discussion on StackOverflow, make sure that you understand
+the source code line `function_to_call = getattr(fibonacci, function)`. You
+should also notice that, instead of accepting as input the full name of a
+function, this program accepts the name of the container and then builds up the
+name of the function. Can you find and understand the source code that
+completes this task?
 
 ### Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence
 
