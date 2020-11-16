@@ -186,7 +186,7 @@ that when you want to run `gradle grade` you must be in the "home base"
 directory for this laboratory assignment. However, when you want to run the
 Python program you need to be in the directory called `factorialmaker`.
 
-### Using Iteration to Compute the Numbers in the Fibonacci Sequence
+### Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence
 
 For this laboratory assignment you are going to design, implement, and test a
 program that, for a specified "container" (which, for this assignment is either
@@ -249,11 +249,11 @@ produces the following output:
 =========================== test session starts ============================
 platform linux -- Python 3.8.5, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
 rootdir: /home/gkapfham/working/teaching/github-classroom/Allegheny-Computer-Science-102-F2020/solutions/cs102-F2020-lab9-solution/fibonaccicreator
-collected 5 items
+collected 9 items
 
-tests/test_fibonacci.py .....                                        [100%]
+tests/test_fibonacci.py .........                                    [100%]
 
-============================ 5 passed in 0.24s =============================
+============================ 9 passed in 0.24s =============================
 ```
 
 ### Conducting an Experiment to Evaluate Execution Time and Memory Efficiency
@@ -297,6 +297,23 @@ assignment. In particular, you should make sure that your reflection contains
 data tables that arise from running the programs and your analysis of the data
 tables. Ultimately, you should draw a conclusion about which program is the most
 memory efficient and which one requires the least amount of execution time.
+
+### Transferring Your Source code and Technical Writing to GitHub
+
+As you are working on your laboratory assignment, please make sure that you use
+VSCode to regularly save your work and transfer it to the GitHub servers. For
+instance, please use the `git commit` command in your terminal window or use the
+similar feature in VSCode to "stage" your changes in your repository. Once you
+have committed your source code to your repository and confirmed to the best of
+your ability that it is working correctly, you can use the `git push` command to
+transfer your work to your GitHub repository, making it available for the course
+instructor for assessment. Please make sure that you regularly commit your
+source code and technical writing, using descriptive commit messages to explain
+how each commit changes the contents of the repository. Please do not use
+vacuous commit messages that do not explain how your commit changes the contents
+of the repository! Finally, don't forget that you can commit many times to your
+GitHub repository and check your work locally on your laptop before you use the
+`git push` command to transfer your work to GitHub.
 
 ## Automated Checks with GatorGrader
 
