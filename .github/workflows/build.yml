@@ -50,6 +50,7 @@ jobs:
             files: "build.gradle, gradle.properties, settings.gradle, gatorgrader.yml"
         # Install pip
         - name: Install Pip
+          if: always()
           run: |
             pip install -U pip
         # Install pipenv
@@ -59,6 +60,7 @@ jobs:
             pip install pipenv
         # Install poetry
         - name: Install Poetry
+          if: always()
           uses: abatilo/actions-poetry@v2.0.0
           with:
             poetry-version: 1.0.10
