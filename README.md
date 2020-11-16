@@ -315,7 +315,7 @@ data tables that arise from running the programs and your analysis of the data
 tables. Ultimately, you should draw a conclusion about which program is the most
 memory efficient and which one requires the least amount of execution time.
 
-### Transferring Your Source code and Technical Writing to GitHub
+### Transferring Your Source Code and Technical Writing to GitHub
 
 As you are working on your laboratory assignment, please make sure that you use
 VSCode to regularly save your work and transfer it to the GitHub servers. For
