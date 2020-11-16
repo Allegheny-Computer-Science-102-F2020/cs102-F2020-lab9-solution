@@ -16,7 +16,7 @@ def fibonacci_iterative(number: int) -> int:
         # a gets the current value of b
         # b gets the current value of a + b
         a, b = b, a + b
-    # return the final tuple that contains the fibonacci numbers
+    # return the final computed value of the Fibonacci number
     return a
 
 
