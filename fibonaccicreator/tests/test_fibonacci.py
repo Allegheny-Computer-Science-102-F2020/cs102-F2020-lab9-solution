@@ -18,3 +18,10 @@ def test_oneth_fibonacci_default_next():
     number = 1
     result = fibonacci.fibonacci_iterative(number)
     assert result == 1
+
+
+def test_sixth_fibonacci():
+    """Ensure that the request for the Fibonacci iterative function works."""
+    number = 6
+    result = fibonacci.fibonacci_iterative(number)
+    assert result == 13
