@@ -77,7 +77,9 @@ def main(
     # Reference:
     # https://www.geeksforgeeks.org/how-to-find-size-of-an-object-in-python
     # https://www.quora.com/How-much-memory-taken-by-variables-in-python
-    typer.echo(f"Estimated size of the dictionary: {sys.getsizeof(fibonacci.fibonacci_storage)} bytes")
+    typer.echo(
+        f"Estimated size of the dictionary: {sys.getsizeof(fibonacci.fibonacci_storage)} bytes"
+    )
 
 
 if __name__ == "__main__":
