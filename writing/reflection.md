@@ -3,27 +3,41 @@
 ## Using at least three fenced code blocks, please display the output from running your program with each approach
 
 ```
-The chosen type of container is the tuple! 🗃
+The chosen type of approach is iterative!
 
-The program will compute up to the 10th Fibonacci number! 🔢
+The program will compute the 1000th Fibonacci number! 🔢
 
-  This is the output from the tuple function:
+This is the output from fibonacci_iterative:
+  70330367711422815821835254877183549770181269836358732742604905087154537118196933579742249494562611733487750449241765991088186363265450223647106012053374121273867339111198139373125598767690091902245245323403501
 
-  (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+So, was this an efficient approach for computing the Fibonacci sequence? 🤷
 
-So, was this an efficient container for storing the Fibonacci sequence? 🤷
+Estimated overall memory according to the operating system:
+   19.2109375 megabytes
+
+Estimated peak memory according to the operating system:
+   33.73046875 megabytes
+
+Estimated size of the dictionary: 64 bytes
 ```
 
 ```
-The chosen type of container is the tuple! 🗃
+The chosen type of approach is iterative!
 
-The program will compute up to the 10th Fibonacci number! 🔢
+The program will compute the 1000th Fibonacci number! 🔢
 
-  This is the output from the tuple function:
+This is the output from fibonacci_iterative:
+  70330367711422815821835254877183549770181269836358732742604905087154537118196933579742249494562611733487750449241765991088186363265450223647106012053374121273867339111198139373125598767690091902245245323403501
 
-  (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+So, was this an efficient approach for computing the Fibonacci sequence? 🤷
 
-So, was this an efficient container for storing the Fibonacci sequence? 🤷
+Estimated overall memory according to the operating system:
+   19.2109375 megabytes
+
+Estimated peak memory according to the operating system:
+   33.73046875 megabytes
+
+Estimated size of the dictionary: 64 bytes
 ```
 
 ```
