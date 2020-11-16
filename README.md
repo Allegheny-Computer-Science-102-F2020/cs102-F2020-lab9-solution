@@ -1,4 +1,4 @@
-# cs102-F2020-lab6-starter
+# cs102-F2020-lab9-starter
 
 ![](../../workflows/build/badge.svg)
 
@@ -143,7 +143,7 @@ GitHub repository for this assignment, please click the green "Accept" button
 and then click the link that is prefaced with the label "Your assignment has
 been created here". If you accepted the assignment and correctly followed these
 steps, you should have created a GitHub repository with a name like
-`Allegheny-Computer-Science-102-Fall-2020/computer-science-102-fall-2020-lab-6-gkapfham`.
+`Allegheny-Computer-Science-102-Fall-2020/computer-science-102-fall-2020-lab-9-gkapfham`.
 Unless you provide the course instructor with documentation of the extenuating
 circumstances that you are facing, not accepting the assignment means that you
 automatically receive a failing grade for all of its components.
@@ -164,7 +164,7 @@ for this assignment. For instance, if the course instructor ran the `git clone`
 command in the terminal, it would look like:
 
 ```
-git clone git@github.com:Allegheny-Computer-Science-102-F2020/computer-science-102-fall-2020-lab-6-gkapfham.git
+git clone git@github.com:Allegheny-Computer-Science-102-F2020/computer-science-102-fall-2020-lab-9-gkapfham.git
 ```
 
 After this command finishes, you can use `cd` to change into the new directory.
@@ -272,7 +272,7 @@ produces the following output:
 ```
 =========================== test session starts ============================
 platform linux -- Python 3.8.5, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
-rootdir: /home/gkapfham/working/teaching/github-classroom/Allegheny-Computer-Science-102-F2020/solutions/cs102-F2020-lab6-solution/fibonaccicreator
+rootdir: /home/gkapfham/working/teaching/github-classroom/Allegheny-Computer-Science-102-F2020/solutions/cs102-F2020-lab9-solution/fibonaccicreator
 collected 5 items
 
 tests/test_fibonacci.py .....                                        [100%]
@@ -371,7 +371,7 @@ container by following the steps in the [Using Docker](#using-docker) section.
 
 ```
         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-        ┃ Passed 32/32 (100%) of checks for cs102-F2020-lab6! ┃
+        ┃ Passed 32/32 (100%) of checks for cs102-F2020-lab9! ┃
         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
@@ -578,7 +578,7 @@ updates, then you can type this command in the main directory for this
 assignment:
 
 ```
-git remote add download git@github.com:Allegheny-Computer-Science-102-F2020/cs102-F2020-lab6-starter.git
+git remote add download git@github.com:Allegheny-Computer-Science-102-F2020/cs102-F2020-lab9-starter.git
 ```
 
 You should only need to type this command once; running the command additional
