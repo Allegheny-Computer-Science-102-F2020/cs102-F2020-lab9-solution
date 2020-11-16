@@ -17,3 +17,13 @@ def fibonacci_iterative(number: int) -> int:
         a, b = b, a + b
     # return the final tuple that contains the fibonacci numbers
     return a
+
+
+@profile
+def fibonacci_recursive(number: int) -> int:
+    """Compute the number-th Fibonacci number using recursion."""
+    # base case
+    if number == 0 or number == 1:
+        return 1
+    # recursive case
+    return fibonacci_recursive(number - 2) + fibonacci_recursive(number - 1)
