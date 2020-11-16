@@ -17,40 +17,43 @@ fibonaccicreator/fibonaccicreator/__main__.py:
     ConfirmFileExists
     MatchFileFragment --fragment "TODO" --count 0 --exact
     MatchFileFragment --fragment "Option(...)" --count 2 --exact
+    MatchFileFragment --fragment "import sys" --count 1 --exact
+    MatchFileFragment --fragment "sys.getsizeof" --count 1 --exact
+    MatchFileFragment --fragment "fibonacci.fibonacci_storage" --count 1 --exact
     MatchFileFragment --fragment "run(main)" --count 1 --exact
     MatchFileFragment --fragment "getattr(" --count 1 --exact
     MatchFileFragment --fragment "function_to_call(" --count 1 --exact
     MatchFileFragment --fragment "format_bytes" --count 2
-    CountMultipleLineComments --language Python --count 2
+    CountMultipleLineComments --language Python --count 3
     CountSingleLineComments --language Python --count 4
 
 # --> check the Python program
 fibonaccicreator/fibonaccicreator/fibonacci.py:
     ConfirmFileExists
     MatchFileFragment --fragment "TODO" --count 0 --exact
-    MatchFileFragment --fragment "(a,)" --count 1
+    MatchFileFragment --fragment "result = ()" --count 0 --exact
+    MatchFileFragment --fragment "(a,)" --count 0 --exact
     MatchFileFragment --fragment "a = 1" --count 1
     MatchFileFragment --fragment "b = 1" --count 1
-    MatchFileFragment --fragment "result = ()" --count 1
     MatchFileFragment --fragment "fibonacci_iterative" --count 1
-    MatchFileFragment --fragment "fibonacci_recursive" --count 1 --exact
-    MatchFileFragment --fragment "fibonacci_memoized" --count 3 --exact
-    CountMultipleLineComments --language Python --count 3 --exact
-    CountSingleLineComments --language Python --count 16 --exact
+    MatchFileFragment --fragment "fibonacci_recursive" --count 3
+    MatchFileFragment --fragment "fibonacci_memoized" --count 3
+    CountMultipleLineComments --language Python --count 4
+    CountSingleLineComments --language Python --count 16
 
 # --> check the Python program
 fibonaccicreator/tests/test_fibonacci.py:
     ConfirmFileExists
     MatchFileFragment --fragment "TODO" --count 0 --exact
-    MatchFileFragment --fragment "test_" --count 5 --exact
+    MatchFileFragment --fragment "test_" --count 9
     CountMultipleLineComments --language Python --count 4
 
 # --> check the technical writing for various characteristics
 writing/reflection.md:
     ConfirmFileExists
-    CountFileWords --count 700 --exact
-    CountMarkdownTags --tag "heading" --count 10 --exact
-    CountMarkdownTags --tag "code_block" --count 7
+    CountFileWords --count 500
+    CountMarkdownTags --tag "heading" --count 8
+    CountMarkdownTags --tag "code_block" --count 3
     MatchFileFragment --fragment "TODO" --count 0 --exact
     MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
 
