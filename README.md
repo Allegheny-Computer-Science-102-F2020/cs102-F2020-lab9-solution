@@ -4,30 +4,6 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [Continuous Learning](#continuous-learning)
-* [Assignment Reminders](#assignment-reminders)
-* [Accessing the Assignment](#accessing-the-assignment)
-* [Laboratory Assignment Tasks](#laboratory-assignment-tasks)
-  + [Installing Programs that Support Python Programming](#installing-programs-that-support-python-programming)
-  + [Using Iteration to Compute the Numbers in the Fibonacci Sequence](#using-iteration-to-compute-the-numbers-in-the-fibonacci-sequence)
-  + [Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence](#running-a-test-suite-for-a-program-that-computes-numbers-in-the-fibonacci-sequence)
-  + [Conducting an Experiment to Evaluate Execution Time and Memory Efficiency](#conducting-an-experiment-to-evaluate-execution-time-and-memory-efficiency)
-  + [Reflecting on the Laboratory Assignment](#reflecting-on-the-laboratory-assignment)
-* [Automated Checks with GatorGrader](#automated-checks-with-gatorgrader)
-* [Assignment Assessment](#assignment-assessment)
-* [Advance Feedback on an Assignment](#advance-feedback-on-an-assignment)
-* [Discussion of a Graded Assignment](#discussion-of-a-graded-assignment)
-* [Additional Resources](#additional-resources)
-  + [System Commands](#system-commands)
-* [Non-Interactive Docker Commands](#non-interactive-docker-commands)
-* [Commands for an Interactive Docker Shell](#commands-for-an-interactive-docker-shell)
-* [Upgrading the Docker Container](#upgrading-the-docker-container)
-  + [Downloading Project Updates](#downloading-project-updates)
-  + [Using GitHub Actions](#using-github-actions)
-  + [System Requirements](#system-requirements)
-  + [Reporting Problems](#reporting-problems)
-  + [Receiving Assistance](#receiving-assistance)
 
 ## Objectives
 
@@ -43,9 +19,9 @@ The learning objectives for this laboratory assignment are as follows:
 - To use the `getattr` function to reflectively access a function through a String
 - To use String concatenation to construct the name of a function to reflectively call
 - To implement Pytest test cases that tests a mathematical function
-- To use Sympy in a test case to determine if a mathematical function produces correct output
 - To conduct an experiment to evaluate the performance of different Python functions
-- To perform results analysis of memory overhead and execution time data sets
+- To perform results a analysis of memory overhead and execution time data sets
+- To explore the trade-offs of using memoization with recursive functions in Python
 
 ## Introduction
 
