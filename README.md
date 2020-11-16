@@ -198,18 +198,21 @@ said, if you did not install Python 3.8.5 and Poetry on your laptop, then you
 can use the versions of these programs that are available in the provided Docker
 container. Ultimately, if you are not sure that all of the Python development
 tools are working correctly on your laptop, then you should always use the
-provided Docker container.
+provided Docker container. Finally, it is important to note that if you are
+using MacOS or Windows on your laptop you will probably need to use the Docker
+container since both of those operating systems may not offer the tools needed
+to take accurate timings of the program that you will implement.
 
 Now, making sure that you are in your "home base" directory for this laboratory
-assignment, you need to install the dependencies for the `factorialmaker`
+assignment, you need to install the dependencies for the `fibonaccicreator`
 program that you will implement, debug, and observe. To complete this step you
-need to type `cd factorialmaker` and then `poetry install`. What output did
+need to type `cd fibonaccicreator` and then `poetry install`. What output did
 this command produce? What do you think that this step did? Why is important to
 type these commands? Make sure that you know the answers to these question
 before moving onto the next step of the assignment. Finally, please remember
 that when you want to run `gradle grade` you must be in the "home base"
 directory for this laboratory assignment. However, when you want to run the
-Python program you need to be in the directory called `factorialmaker`.
+Python program you need to be in the directory called `fibonaccicreator`.
 
 ### Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence
 
@@ -279,12 +282,12 @@ completes this task?
 
 ### Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence
 
-If you look in the Python file called `factorialmaker/tests/test_fibonacci.py`
+If you look in the Python file called `fibonaccicreator/tests/test_fibonacci.py`
 you will see that it does not contain the  test cases that were provided in the
 practical assignment. Please take time to review each of these test cases from
 the practical assignment and work to understand how they are testing the
-functions in the file called `factorial.py`. Can you explain the purpose of the
-different test cases for the function in the `factorial.py` file? Next, make
+functions in the file called `fibonacci.py`. Can you explain the purpose of the
+different test cases for the function in the `fibonacci.py` file? Next, make
 sure that you copy over the test cases from the practical so that they are also
 available as part of the laboratory assignment's code base. If you would like to
 do so, you may also add test cases for all of the new functions provided in the
