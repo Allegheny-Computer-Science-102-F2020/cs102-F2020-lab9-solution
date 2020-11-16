@@ -425,7 +425,6 @@ following components:
   the use of effective Python source code comments, correct Git commit messages,
   and accurate responses to the technical writing questions.
 
-
 ## Advance Feedback on an Assignment
 
 Students who wish to receive feedback on their work for any course assignment
