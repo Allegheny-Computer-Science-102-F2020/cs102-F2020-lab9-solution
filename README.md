@@ -13,7 +13,6 @@
   + [Installing Programs that Support Python Programming](#installing-programs-that-support-python-programming)
   + [Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence](#using-multiple-approaches-to-compute-the-numbers-in-the-fibonacci-sequence)
   + [Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence](#running-a-test-suite-for-a-program-that-computes-numbers-in-the-fibonacci-sequence)
-  + [Conducting an Experiment to Evaluate Execution Time and Memory Efficiency](#conducting-an-experiment-to-evaluate-execution-time-and-memory-efficiency)
   + [Reflecting on the Laboratory Assignment](#reflecting-on-the-laboratory-assignment)
   + [Transferring Your Source code and Technical Writing to GitHub](#transferring-your-source-code-and-technical-writing-to-github)
 * [Automated Checks with GatorGrader](#automated-checks-with-gatorgrader)
@@ -243,6 +242,18 @@ Estimated size of the dictionary: 36960 bytes
 poetry run python fibonaccicreator --number 1000 --approach memoized  0.29s user 0.07s system 101% cpu 0.354 total
 ```
 
+After you have finished adding all of the required functions to the file called
+`fibonacci.py`, you should conduct an experiment to determine which function in
+this module that demonstrates the best performance. That is, you should attempt
+to answer the questions: (i) which function yields the smallest and greatest
+amount of overall memory consumed?, (ii) which function consumes the smallest
+and greatest amount of execution time?, (iii) how much memory does an empty
+dictionary consume in the Python programming language, (iv) how much memory does
+a dictionary consume after it is used by the memoized function?, and (v) why are
+these trends evident in your data set? Importantly, as you are running the
+functions and analyzing the results, please make sure that you both identify the
+key trends and, additionally, explain why those trends are evident in your data.
+
 As in a previous assignment, please note that this version of the program adds a
 `--display` function and thus it will no longer display the Fibonacci numbers
 unless this argument is passed to the function. This helps to ensure that your
@@ -291,36 +302,6 @@ tests/test_fibonacci.py .........                                    [100%]
 
 ============================ 9 passed in 0.24s =============================
 ```
-
-### Conducting an Experiment to Evaluate Execution Time and Memory Efficiency
-
-Now you should conduct an experiment to assess whether the tuple or the list is
-a more efficient container for storing the values in the Fibonacci sequence.
-Please note that you need to run the program in a different fashion if you want
-to see it produce extra output that will show the memory behavior of the
-program. Before you run these commands, it is also important to ensure that you
-have already entered into your Docker container and you can run shell commands
-inside of it. Then, you can use the following command to run the program with
-the tuple container so that it will produce a wide variety of debugging output
-about performance: `time poetry run python -m memory_profiler fibonaccicreator
---number 10000 --container tuple`. You can also run the following command to
-evaluate performance with the list container: `time poetry run python -m
-memory_profiler fibonaccicreator --number 10000 --container list`.
-
-Please note that these commands will produce a significant amount of output!
-Your tasks as part of this laboratory assignment is to interpret this output and
-to decide: which of the two containers leads to the fastest computation and
-which of the two containers leads to the most memory efficient computation. The
-first region of output will contain details concerning the line-level memory
-usage. The second region will show some estimates of the memory usage for the
-overall Python program. Finally, the output from the `time` command in the last
-region of output will report how long the program took to execute; you can focus
-on the `real` label for your analysis of the program's efficiency. Please make
-sure that you conduct your experiment with many different values for the
-`--number` argument, thereby ensuring that you build up an accurate picture of
-how these two different containers support memory and time efficiency inside of
-a Python program. Finally, you should report on your results in the reflection
-document.
 
 ### Reflecting on the Laboratory Assignment
 
