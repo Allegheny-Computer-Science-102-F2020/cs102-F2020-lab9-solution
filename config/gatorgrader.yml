@@ -1,0 +1,73 @@
+---
+name: cs102-F2020-lab9
+break: true
+indent: 4
+---
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the Python program
+fibonaccicreator/fibonaccicreator/__main__.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "Option(...)" --count 2 --exact
+    MatchFileFragment --fragment "run(main)" --count 1 --exact
+    MatchFileFragment --fragment "getattr(" --count 1 --exact
+    MatchFileFragment --fragment "function_to_call(" --count 1 --exact
+    MatchFileFragment --fragment "format_bytes" --count 2
+    CountMultipleLineComments --language Python --count 2
+    CountSingleLineComments --language Python --count 4
+
+# --> check the Python program
+fibonaccicreator/fibonaccicreator/fibonacci.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "(a,)" --count 1
+    MatchFileFragment --fragment "a = 1" --count 1
+    MatchFileFragment --fragment "b = 1" --count 1
+    MatchFileFragment --fragment "result = ()" --count 1
+    MatchFileFragment --fragment "fibonacci_tuple" --count 1
+    MatchFileFragment --fragment "fibonacci_list" --count 1
+    MatchFileFragment --fragment "fibonacci_generator" --count 0
+    CountMultipleLineComments --language Python --count 3
+    CountSingleLineComments --language Python --count 16
+
+# --> check the Python program
+fibonaccicreator/tests/test_fibonacci.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "test_" --count 5
+    CountMultipleLineComments --language Python --count 4
+
+# --> check the technical writing for various characteristics
+writing/reflection.md:
+    ConfirmFileExists
+    CountFileWords --count 700
+    CountMarkdownTags --tag "heading" --count 10 --exact
+    CountMarkdownTags --tag "code_block" --count 7
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 5
+
+# --> check that the program executes correctly and produces correct number of lines of output
+ExecuteCommand --command "cd fibonaccicreator; poetry install; poetry run python fibonaccicreator --number 10 --container tuple; cd .."
+
+# Output of the Python Program:
+
+# The chosen type of container is the tuple! 🗃
+
+# The program will compute up to the 10th Fibonacci number! 🔢
+
+  # This is the output from the tuple function:
+
+  # (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+
+# So, was this an efficient container for storing the Fibonacci sequence? 🤷
