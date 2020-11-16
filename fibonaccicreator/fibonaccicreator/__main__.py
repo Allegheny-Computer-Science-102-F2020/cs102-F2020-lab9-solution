@@ -4,6 +4,7 @@ import typer
 
 import os
 import psutil
+import sys
 
 from resource import getrusage, RUSAGE_SELF
 
@@ -72,6 +73,11 @@ def main(
     typer.echo("Estimated peak memory according to the operating system:")
     typer.echo("   " + format_bytes(getrusage(RUSAGE_SELF).ru_maxrss * 1024))
     typer.echo()
+    # display the size of the dictionary
+    # Reference:
+    # https://www.geeksforgeeks.org/how-to-find-size-of-an-object-in-python
+    # https://www.quora.com/How-much-memory-taken-by-variables-in-python
+    typer.echo(f"Estimated size of the dictionary: {sys.getsizeof(fibonacci.fibonacci_storage)} bytes")
 
 
 if __name__ == "__main__":
