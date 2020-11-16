@@ -336,42 +336,45 @@ command `echo $?`). You will need to run
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) in a Docker
 container by following the steps in the [Using Docker](#using-docker) section.
 
-- The command `cd fibonaccicreator; poetry install; poetry run python fibonaccicreator --number 10 --container tuple; cd ..` executes correctly
+- The command `cd fibonaccicreator; poetry install; poetry run python fibonaccicreator --number 1000 --approach iterative --display; cd ..` executes correctly
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 16 single-line Python comment(s)
 - The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `a = 1` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `(a,)` fragment
 - The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `b = 1` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `fibonacci_generator` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `fibonacci_list` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `fibonacci_tuple` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `result = ()` fragment
-- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 20 single-line Python comment(s)
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 1 of the `fibonacci_iterative` fragment
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 3 of the `fibonacci_memoized` fragment
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 3 of the `fibonacci_recursive` fragment
 - The fibonacci.py in fibonaccicreator/fibonaccicreator has at least 4 multiple-line Python comment(s)
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has exactly 0 of the `(a,)` fragment
+- The fibonacci.py in fibonaccicreator/fibonaccicreator has exactly 0 of the `result = ()` fragment
 - The fibonacci.py in fibonaccicreator/fibonaccicreator has exactly 0 of the `TODO` fragment
 - The file fibonacci.py exists in the fibonaccicreator/fibonaccicreator directory
 - The file \_\_main\_\_.py exists in the fibonaccicreator/fibonaccicreator directory
 - The file reflection.md exists in the writing directory
 - The file test_fibonacci.py exists in the fibonaccicreator/tests directory
-- The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has at least 2 multiple-line Python comment(s)
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has at least 2 of the `format_bytes` fragment
+- The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has at least 3 multiple-line Python comment(s)
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has at least 4 single-line Python comment(s)
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 0 of the `TODO` fragment
+- The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `fibonacci.fibonacci_storage` fragment
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `function_to_call(` fragment
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `getattr(` fragment
+- The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `import sys` fragment
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `run(main)` fragment
+- The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 1 of the `sys.getsizeof` fragment
 - The \_\_main\_\_.py in fibonaccicreator/fibonaccicreator has exactly 2 of the `Option(...)` fragment
-- The reflection.md in writing has at least 700 word(s) in total
-- The reflection.md in writing has at least 7 of the `code_block` tag
+- The reflection.md in writing has at least 3 of the `code_block` tag
+- The reflection.md in writing has at least 500 word(s) in total
+- The reflection.md in writing has at least 8 of the `heading` tag
 - The reflection.md in writing has exactly 0 of the `Add Your Name Here` fragment
 - The reflection.md in writing has exactly 0 of the `TODO` fragment
-- The reflection.md in writing has exactly 10 of the `heading` tag
 - The repository has at least 5 commit(s)
 - The test_fibonacci.py in fibonaccicreator/tests has at least 4 multiple-line Python comment(s)
-- The test_fibonacci.py in fibonaccicreator/tests has at least 5 of the `test_` fragment
+- The test_fibonacci.py in fibonaccicreator/tests has at least 9 of the `test_` fragment
 - The test_fibonacci.py in fibonaccicreator/tests has exactly 0 of the `TODO` fragment
 
 ```
         ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-        ┃ Passed 32/32 (100%) of checks for cs102-F2020-lab9! ┃
+        ┃ Passed 35/35 (100%) of checks for cs102-F2020-lab9! ┃
         ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
