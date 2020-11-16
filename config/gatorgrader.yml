@@ -32,23 +32,23 @@ fibonaccicreator/fibonaccicreator/fibonacci.py:
     MatchFileFragment --fragment "a = 1" --count 1
     MatchFileFragment --fragment "b = 1" --count 1
     MatchFileFragment --fragment "result = ()" --count 1
-    MatchFileFragment --fragment "fibonacci_tuple" --count 1
-    MatchFileFragment --fragment "fibonacci_list" --count 1
-    MatchFileFragment --fragment "fibonacci_generator" --count 0
-    CountMultipleLineComments --language Python --count 3
-    CountSingleLineComments --language Python --count 16
+    MatchFileFragment --fragment "fibonacci_iterative" --count 1
+    MatchFileFragment --fragment "fibonacci_recursive" --count 1 --exact
+    MatchFileFragment --fragment "fibonacci_memoized" --count 3 --exact
+    CountMultipleLineComments --language Python --count 3 --exact
+    CountSingleLineComments --language Python --count 16 --exact
 
 # --> check the Python program
 fibonaccicreator/tests/test_fibonacci.py:
     ConfirmFileExists
     MatchFileFragment --fragment "TODO" --count 0 --exact
-    MatchFileFragment --fragment "test_" --count 5
+    MatchFileFragment --fragment "test_" --count 5 --exact
     CountMultipleLineComments --language Python --count 4
 
 # --> check the technical writing for various characteristics
 writing/reflection.md:
     ConfirmFileExists
-    CountFileWords --count 700
+    CountFileWords --count 700 --exact
     CountMarkdownTags --tag "heading" --count 10 --exact
     CountMarkdownTags --tag "code_block" --count 7
     MatchFileFragment --fragment "TODO" --count 0 --exact
@@ -57,17 +57,25 @@ writing/reflection.md:
 # --> check that the number of commits in the Git repository is beyond a threshold
 CountCommits --count 5
 
-# --> check that the program executes correctly and produces correct number of lines of output
-ExecuteCommand --command "cd fibonaccicreator; poetry install; poetry run python fibonaccicreator --number 10 --container tuple; cd .."
+# --> check that the program executes correctly
+ExecuteCommand --command "cd fibonaccicreator; poetry install; poetry run python fibonaccicreator --number 1000 --approach iterative --display; cd .."
 
 # Output of the Python Program:
 
-# The chosen type of container is the tuple! 🗃
+# The chosen type of approach is iterative!
 
-# The program will compute up to the 10th Fibonacci number! 🔢
+# The program will compute the 1000th Fibonacci number! 🔢
 
-  # This is the output from the tuple function:
+# This is the output from fibonacci_iterative:
 
-  # (1, 1, 2, 3, 5, 8, 13, 21, 34, 55)
+#   70330367711422815821835254877183549770181269836358732742604905087154537118196933579742249494562611733487750449241765991088186363265450223647106012053374121273867339111198139373125598767690091902245245323403501
 
-# So, was this an efficient container for storing the Fibonacci sequence? 🤷
+# So, was this an efficient approach for computing the Fibonacci sequence? 🤷
+
+# Estimated overall memory according to the operating system:
+#    19.2109375 megabytes
+
+# Estimated peak memory according to the operating system:
+#    33.73046875 megabytes
+
+# Estimated size of the dictionary: 64 bytes
