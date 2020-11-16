@@ -4,6 +4,32 @@
 
 ## Table of Contents
 
+* [Objectives](#objectives)
+* [Introduction](#introduction)
+* [Continuous Learning](#continuous-learning)
+* [Assignment Reminders](#assignment-reminders)
+* [Accessing the Assignment](#accessing-the-assignment)
+* [Laboratory Assignment Tasks](#laboratory-assignment-tasks)
+  + [Installing Programs that Support Python Programming](#installing-programs-that-support-python-programming)
+  + [Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence](#using-multiple-approaches-to-compute-the-numbers-in-the-fibonacci-sequence)
+  + [Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence](#running-a-test-suite-for-a-program-that-computes-numbers-in-the-fibonacci-sequence)
+  + [Conducting an Experiment to Evaluate Execution Time and Memory Efficiency](#conducting-an-experiment-to-evaluate-execution-time-and-memory-efficiency)
+  + [Reflecting on the Laboratory Assignment](#reflecting-on-the-laboratory-assignment)
+  + [Transferring Your Source code and Technical Writing to GitHub](#transferring-your-source-code-and-technical-writing-to-github)
+* [Automated Checks with GatorGrader](#automated-checks-with-gatorgrader)
+* [Assignment Assessment](#assignment-assessment)
+* [Advance Feedback on an Assignment](#advance-feedback-on-an-assignment)
+* [Discussion of a Graded Assignment](#discussion-of-a-graded-assignment)
+* [Additional System Resources](#additional-system-resources)
+  + [System Commands](#system-commands)
+  + [Non-Interactive Docker Commands](#non-interactive-docker-commands)
+  + [Commands for an Interactive Docker Shell](#commands-for-an-interactive-docker-shell)
+  + [Upgrading the Docker Container](#upgrading-the-docker-container)
+  + [Downloading Project Updates](#downloading-project-updates)
+  + [Using GitHub Actions](#using-github-actions)
+  + [System Requirements](#system-requirements)
+* [Reporting Problems](#reporting-problems)
+* [Receiving Assistance](#receiving-assistance)
 
 ## Objectives
 
@@ -443,7 +469,7 @@ comment. Students can continue to discuss the graded assignment with the course
 instructor until they understand all the technical topics that were the
 focus of the particular assignment.
 
-## Additional Resources
+## Additional System Resources
 
 ### System Commands
 
@@ -456,7 +482,7 @@ development workstation. Individuals who do not want to install Docker can
 optionally install of the programs mentioned in the [Project
 Requirements](#requirements) section of this document.
 
-## Non-Interactive Docker Commands
+### Non-Interactive Docker Commands
 
 Once you have installed [Docker
 Desktop](https://www.docker.com/products/docker-desktop), with MacOS and Linux
@@ -526,7 +552,7 @@ Here are some additional commands that you may need to run when using Docker:
 * `docker container prune`: remove all stopped docker containers from your workstation
 * `docker rmi $(docker images -q) --force`: remove all docker images from your workstation
 
-## Commands for an Interactive Docker Shell
+### Commands for an Interactive Docker Shell
 
 Since the above `docker run` command uses a Docker images that, by default, runs
 `gradle grade` and then exits the Docker container, you may want to instead run
@@ -572,7 +598,7 @@ Remember, to correctly run any of the commands mentioned in this guide, you must
 be in the main (i.e., "home base") directory for a course assignment where the
 `build.gradle` file is located.
 
-## Upgrading the Docker Container
+### Upgrading the Docker Container
 
 If the course instructor provides a new version of the Docker container called
 `gatoreducator/dockagator` and you want to receive it immediately, you must
@@ -653,7 +679,7 @@ This assignment was developed to work with the following software and versions:
   - MDL 0.5.0
   - Python 3.7 or 3.8
 
-### Reporting Problems
+## Reporting Problems
 
 If you have found a problem with this assignment's provided source code or
 documentation, then you can go to the [Computer Science 102 Fall 2020 Planning
@@ -670,7 +696,7 @@ use the appropriate GitHub issue tracker to correctly document, a mistake in any
 aspect of this assignment will receive extra credit towards their grade for the
 course.
 
-### Receiving Assistance
+## Receiving Assistance
 
 If you are having trouble completing any part of this project, then please talk
 with either the course instructor or a student technical leader during the
