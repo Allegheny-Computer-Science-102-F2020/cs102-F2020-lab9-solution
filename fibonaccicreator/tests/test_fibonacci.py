@@ -1,7 +1,5 @@
 """Add test cases for the functions in the fibonacci module."""
 
-import sympy
-
 
 from fibonaccicreator import fibonacci
 
