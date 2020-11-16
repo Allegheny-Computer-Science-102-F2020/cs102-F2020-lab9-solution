@@ -28,19 +28,19 @@ def format_bytes(size):
 
 
 def main(
-    container: str = typer.Option(...),
+    approach: str = typer.Option(...),
     number: int = typer.Option(...),
     display: bool = typer.Option(False, "--display"),
 ):
-    """Create the list of Fibonacci values in a specified container."""
+    """Create the list of Fibonacci values with a specified approach."""
     # display the debugging output for the program's command-line arguments
     typer.echo("")
-    typer.echo(f"The chosen type of container is the {container}! 🗃")
+    typer.echo(f"The chosen type of approach is {approach}!")
     typer.echo("")
-    typer.echo(f"The program will compute up to the {number}th Fibonacci number! 🔢")
+    typer.echo(f"The program will compute the {number}th Fibonacci number! 🔢")
     typer.echo("")
     # construct the full name of the function to call
-    function = FIBONACCI_FUNCTION_BASE + UNDERSCORE + container
+    function = FIBONACCI_FUNCTION_BASE + UNDERSCORE + approach
     # construct the requested function from the compute module
     # Reference: https://stackoverflow.com/questions/3061/calling-a-function-of-a-module-by-using-its-name-a-string
     function_to_call = getattr(fibonacci, function)
@@ -48,7 +48,7 @@ def main(
     fibonacci_result = function_to_call(number)
     # display debugging information with the function's output
     if display:
-        typer.echo(f"  This is the output from the {container} function:")
+        typer.echo(f"  This is the output from {function}:")
         typer.echo("")
         # display the output from the computation
         typer.echo("  " + str(fibonacci_result))
@@ -56,7 +56,7 @@ def main(
     # display a final message and some extra spacing, asking a question
     # about the efficiency of the approach to computing the number sequence
     typer.echo(
-        "So, was this an efficient container for storing the Fibonacci sequence? 🤷"
+        "So, was this an efficient approach for computing the Fibonacci sequence? 🤷"
     )
     typer.echo("")
     process = psutil.Process(os.getpid())
