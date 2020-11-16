@@ -14,7 +14,7 @@
   + [Using Multiple Approaches to Compute the Numbers in the Fibonacci Sequence](#using-multiple-approaches-to-compute-the-numbers-in-the-fibonacci-sequence)
   + [Running a Test Suite for a Program that Computes Numbers in the Fibonacci Sequence](#running-a-test-suite-for-a-program-that-computes-numbers-in-the-fibonacci-sequence)
   + [Reflecting on the Laboratory Assignment](#reflecting-on-the-laboratory-assignment)
-  + [Transferring Your Source code and Technical Writing to GitHub](#transferring-your-source-code-and-technical-writing-to-github)
+  + [Transferring Your Source Code and Technical Writing to GitHub](#transferring-your-source-code-and-technical-writing-to-github)
 * [Automated Checks with GatorGrader](#automated-checks-with-gatorgrader)
 * [Assignment Assessment](#assignment-assessment)
 * [Advance Feedback on an Assignment](#advance-feedback-on-an-assignment)
