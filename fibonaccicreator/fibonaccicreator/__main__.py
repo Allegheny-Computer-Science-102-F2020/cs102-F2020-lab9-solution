@@ -49,7 +49,7 @@ def main(
     fibonacci_result = function_to_call(number)
     # display debugging information with the function's output
     if display:
-        typer.echo(f"  This is the output from {function}:")
+        typer.echo(f"This is the output from {function}:")
         typer.echo("")
         # display the output from the computation
         typer.echo("  " + str(fibonacci_result))
