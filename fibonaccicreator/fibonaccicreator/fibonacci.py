@@ -1,13 +1,10 @@
 """Compute values in the Fibonacci sequence using different approaches."""
 
-from memory_profiler import profile
-
 # create an empty dictionary used for storage
 # of previously computed Fibonacci values
 fibonacci_storage = {}
 
 
-@profile
 def fibonacci_iterative(number: int) -> int:
     """Compute the number-th Fibonacci number using iteration."""
     # set the initial conditions for the calculation
@@ -23,7 +20,6 @@ def fibonacci_iterative(number: int) -> int:
     return a
 
 
-@profile
 def fibonacci_recursive(number: int) -> int:
     """Compute the number-th Fibonacci number using recursion."""
     # base case
@@ -33,7 +29,6 @@ def fibonacci_recursive(number: int) -> int:
     return fibonacci_recursive(number - 2) + fibonacci_recursive(number - 1)
 
 
-@profile
 def fibonacci_memoized(number: int) -> int:
     """Compute the number-th Fibonacci number using recursion."""
     # memoized case
@@ -45,7 +40,7 @@ def fibonacci_memoized(number: int) -> int:
     # recursive case
     else:
         # perform the recursive computation
-        result = fibonacci_recursive(number - 2) + fibonacci_recursive(number - 1)
+        result = fibonacci_memoized(number - 2) + fibonacci_memoized(number - 1)
         # store the value in the dictionary
         fibonacci_storage[number] = result
         # return the result
